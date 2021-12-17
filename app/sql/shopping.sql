@@ -1,10 +1,8 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : adimadim_v1
  Source Server Type    : MySQL
  Source Server Version : 50621
- Source Host           : 77.79.92.214:3306
  Source Schema         : shopping
 
  Target Server Type    : MySQL
