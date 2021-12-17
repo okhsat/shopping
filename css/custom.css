@@ -1,0 +1,150 @@
+body > div.c-site-wrapper {
+    display: block;
+}
+
+.c-site-logo {
+    background: url(../img/logo.png) scroll no-repeat 0 0;
+    background-size: 100% 100%;
+    width: 75px;
+}
+
+.message {
+	display: block;
+	opacity: 0;
+	z-index: 9999;
+	position: fixed;
+	top: 10px;
+	left: 30%;
+	width: 40%;
+	min-height: 40px;
+	margin: 0;
+	padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	background: #fff;	
+	border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	box-shadow: 0 1px 20px #000;
+    -webkit-box-shadow: 0 1px 20px #000;
+    -moz-box-shadow: 0 1px 20px #000;
+	transition: all 1s;
+    -ms-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.message.success {
+	color: #333;
+	background: #A5FFA8;
+}
+
+.message.notice {
+	color: #333;
+	background: #A8E4FF;
+}
+
+.message.warning {
+	color: #fff;
+	background: #FFA126;
+}
+
+.message.error {
+	color: #fff;
+	background: #FF1420;
+}
+
+.message button.message-close {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: url('../img/close.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+    border: none;
+    text-indent: -9999px;
+}
+
+.message button.message-close:hover {
+	cursor: pointer;
+}
+
+.u-margin-auto {
+    margin: 0 auto;
+}
+
+button.add, button.view {
+    padding: 5px 10px;
+}
+
+input.to-add {
+    display: inline-block;
+    width: auto;
+    max-width: 60px;
+    padding: 5px 10px;
+}
+
+div#fixed-cart {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
+    margin: 0;
+    width: 100%;
+    background: #e0d6e1;
+    text-align: center;
+}
+
+div#fixed-cart a.c-btn {
+    padding: 5px 15px;
+    margin: 0 10px;
+}
+
+#shopping-count, #shopping-total {
+    padding: 5px 15px;
+    margin: 0 10px;
+    color: $333;
+    font-weight: 900;
+}
+	
+@media (max-width: 74.99em) {
+	.message {
+     	width: 60%;
+     	left: 20%;
+	}
+}
+
+@media (max-width: 769px) {
+    .message {
+     	width: 80%;
+     	left: 10%;
+	}
+}
+
+@media (max-width: 540px) {
+	tr {
+        display: block;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 20px;
+    }
+    
+    td {
+        display: block;
+        border-bottom: none;
+        text-align: center;
+    }
+	
+	.message {
+     	width: 90%;
+     	left: 5%;
+	}	
+}
